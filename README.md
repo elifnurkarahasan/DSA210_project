@@ -1,20 +1,23 @@
 # DSA210_project
 
-Dataset Description
+Dataset Description:
+
 The dataset focuses on analyzing my personal Steam profile to uncover gaming preferences and behavior patterns. The attributes that will be presented in the dataset include game title, genre, playtime (hours), purchase date, last played date, game rating, price, multiplayer, and release year.
 
-Project Idea
+Project Idea:
+
 The goal is to analyze my historical gaming data to predict future preferences, including identifying favorite genres, estimating playtime for new games, analyzing purchase trends, understanding session patterns, and evaluating multiplayer preferences.
 
-Project Plan
-Data Collection: Gather and preprocess data from my Steam profile. Prepare the dataset, its attributes and their values accordingly.
+Project Plan:
 
-Exploratory Data Analysis (EDA): Visualize and summarize patterns in the dataset.
+1) Data Collection: Gather and preprocess data from my Steam profile. Prepare the dataset, its attributes and their values accordingly.
 
-Model Development: Build predictive models for analyzing stage, such as for finding out game preferences and playtime estimation.
+2) Exploratory Data Analysis (EDA): Visualize and summarize patterns in the dataset.
 
-Insight Generation: Derive actionable insights from the analysis.
+3) Model Development: Build predictive models for analyzing stage, such as for finding out game preferences and playtime estimation.
 
-Documentation and Reporting: Present findings with visualizations and a detailed report.
+4) Insight Generation: Derive actionable insights from the analysis.
 
-Deliverables: Structured dataset, analysis report, predictive model, GitHub repository with code, visualizations.
+5) Documentation and Reporting: Present findings with visualizations and a detailed report.
+
+6) Deliverables: Structured dataset, analysis report, predictive model, GitHub repository with code, visualizations.

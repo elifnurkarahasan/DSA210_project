@@ -7,10 +7,14 @@ Project Idea
 The goal is to analyze my historical gaming data to predict future preferences, including identifying favorite genres, estimating playtime for new games, analyzing purchase trends, understanding session patterns, and evaluating multiplayer preferences.
 
 Project Plan
-Data Collection: Gather and preprocess data from my Steam profile.
+Data Collection: Gather and preprocess data from my Steam profile. Prepare the dataset, its attributes and their values accordingly.
+
 Exploratory Data Analysis (EDA): Visualize and summarize patterns in the dataset.
-Model Development: Build predictive models for game preferences and playtime estimation.
+
+Model Development: Build predictive models for analyzing stage, such as for finding out game preferences and playtime estimation.
+
 Insight Generation: Derive actionable insights from the analysis.
+
 Documentation and Reporting: Present findings with visualizations and a detailed report.
-Deliverables:
-Structured dataset, analysis report, predictive model, GitHub repository with code, visualizations.
+
+Deliverables: Structured dataset, analysis report, predictive model, GitHub repository with code, visualizations.

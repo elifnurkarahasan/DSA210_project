@@ -145,6 +145,15 @@ identify genres that provide the most value for money by offering high playtime 
 
 ***Techniques Used & Stages of Analysis:*** Firstly for data preprocessing, features such as Price/Hour, Time, and Rating were used for both classification and regression tasks. Genres were encoded numerically using the LabelEncoder for machine learning compatibility. For genre prediction, I used a classification approach to identify the most likely genre of a new game based on its attributes. For price prediction, I employed a regression approach to estimate the price of a game within a specific genre based on the same features. To handle class imbalances in genre data, the SMOTE method was applied. This ensured that underrepresented genres were adequately sampled during training, improving model fairness and strength. Both the classifier and regressor were validated using stratified K-fold and standard K-fold cross-validation to ensure performance consistency across different data splits. The contribution of each feature was measured using the inherent importance metric of the Decision Tree model. Classification accuracy, confusion matrix, and RMSE (a metric that quantifies the error between predicted and actual prices) were used to evaluate to what extent the classifier and regressor models were accurate or erroneus. The model was tested with a hypothetical new game (Price/Hour = 0.20, Time = 50 hours, Rating = 90). The classifier predicted the genre, and the regressor estimated the price for this new game, showcasing the model's ability to generalize to unseen data.
 
+***Accuracy, Confusion Matrix and RMSE scores of the Model:*** For accuracy scores, the cross-validation accuracy scores for the decision tree classifier range between 31% and 62%, with a mean accuracy of approximately 51.4%. This indicates moderate performance during validation and suggests that the model is somewhat effective at learning patterns in the training data. The test set accuracy is reported as 66.67%, which is notably higher than the mean cross-validation accuracy. This could indicate that the model performed better on the specific test set due to its composition or reduced data complexity. However, further evaluation, such as examining the confusion matrix and classification report, is necessary to validate this.
+
+As for the classification report, it's precision provides high precision scores for genres such as Business Simulation (1.00), Card Game (1.00), and Simulation (1.00) indicating that when these genres are predicted, they are highly likely to be correct. Some genres, like Simulation, City-building, and Card Game, achieve a recall of 1.00, indicating that the model successfully identified all instances of these genres in the test set. The weighted average F1-score is 0.67, reflecting a balance between precision and recall. While it indicates reasonable performance, genres such as Action-adventure and Adventure have poor F1-scores of 0.00, signaling that the model struggles to predict these classes effectively.
+
+As for the confusion matrix, genres such as Vehicle Simulation, Tactical Shooter, and Business Simulation show strong performance with minimal or no misclassifications.
+However, significant misclassifications occur in genres with fewer data points, such as Survival and Survival Horror, which are confused with each other, likely due to overlapping feature characteristics.
+
+For RMSE scores, the cross-validation RMSE scores range between 2.81 and 5.22, with a mean RMSE of 3.76. These values suggest moderately good performance in predicting game prices during training. The RMSE on the test set is 5.85, which is higher than the mean cross-validation RMSE. This indicates the model may not generalize as well on unseen data, though it is within an acceptable range given the complexity of price prediction.
+
 
 
 
@@ -157,12 +166,16 @@ identify genres that provide the most value for money by offering high playtime 
 
 ***Techniques Used & Stages of Analysis:*** Similar to decision tree model, Game genres were converted into numeric labels using LabelEncoder to enable model processing, and the SMOTE method was applied to balance the dataset, ensuring underrepresented genres were adequately sampled for training. While not critical for Random Forest, features were preprocessed to ensure compatibility with the machine learning pipeline. A Random Forest Classifier was trained to predict game genres. For cross-validation, a 5-fold Stratified K-Fold approach was used for classification, while standard K-Fold was used for regression, ensuring fair evaluation across subsets of the data. The model was configured with 100 estimators and class weights set to "balanced," enhancing its ability to manage class disparities. Just like Decision Tree model, this model's classifier was also evaluated using accuracy scores, a confusion matrix, and classification reports. The model was evaluated on the test set using a confusion matrix, which revealed its ability to distinguish between different genres effectively. A Random Forest Regressor was trained to estimate game prices. The regressor’s performance was assessed using RMSE (Root Mean Squared Error, as explained above). RMSE scores from cross-validation indicated the model’s predictive error, with a lower RMSE suggesting better performance. The Random Forest model identified Price/Hour as the most critical feature for predicting genres, followed by Time and Rating. This insight aligned with intuitive expectations, as cost efficiency and playtime are significant factors in game preferences. The model was tested with a hypothetical new game (Price/Hour = 0.20, Time = 50 hours, Rating = 90). The classifier predicted the genre, while the regressor estimated the game’s price, demonstrating the model’s real-world applicability.
 
+***Accuracy, Confusion Matrix and RMSE scores of the Model:*** For the accuracy scores of this model, the cross-validation accuracy scores range between approximately 34% and 65%, with a mean cross-validation accuracy of 54.2%. This indicates moderate performance, with some variability in accuracy across the folds. The test set accuracy is 61.1%, which is slightly higher than the mean cross-validation accuracy. This suggests that the model generalizes reasonably well to unseen data, although there's room for improvement.
+
+As for the classification report, the precision, recall, and F1-scores vary significantly across genres. Genres like "Card Game," "Simulation," and "Business Simulation" achieve perfect scores (precision, recall, and F1 = 1.0), indicating excellent prediction performance for these genres. Other genres, such as "Action-Adventure" and "Adventure," have scores of 0.0, meaning the model fails to predict them accurately. The weighted average F1-score is 58%, which is lower than the overall accuracy, reflecting imbalanced performance across classes.
+
+The confusion matrix highlights the model's strengths and weaknesses, showing that genres such as "Vehicle Simulation" and "Tactical Shooter" are correctly classified in most instances, showing the model's ability to differentiate these categories. However, some genres like "Action-Adventure" and "Adventure" are consistently misclassified, indicating that the model struggles with these categories.
+
+For the RMSE scores, the cross-validation RMSE scores range from approximately 2.49 to 4.72, with a mean RMSE of 3.57. These scores indicate that the model performs consistently well across folds. The test set RMSE is 5.19, which is slightly higher than the mean cross-validation RMSE. This suggests the model struggles slightly more with unseen data but still maintains reasonable performance.
 
 
-
-**-Machine Learning Model Analysis 2: Naive Bayes Model**
-
-
+**-Machine Learning Model Analysis 3: Naive Bayes Model**
 
 
 ***Purpose of the Visualization:*** I seleted the Naive Bayes algorithm for its efficiency, probabilistic nature, and interpretability. To explain; the Naive Bayes model is computationally lightweight and can quickly build models even with relatively small datasets. Furthermore, the model is particularly effective for classification tasks where feature independence is assumed, such as genre prediction. Additionaly, the underlying probabilistic calculations provide insights into how predictions are made, aligning well with my project’s goal of understanding gaming preferences. Another reason why I chose this model was because this model served as a complementary approach to the ensemble-based Random Forest, allowing for a comparison of performance and interpretability across models.
@@ -170,9 +183,47 @@ identify genres that provide the most value for money by offering high playtime 
 ***Techniques Used & Stages of Analysis:*** Techniques used for this model include firstly to select numerical features such as Price/Hour, Time, and Rating for their relevance to predicting genres. Then, game genres were encoded into numeric values using LabelEncoder, enabling the model to process categorical labels. Features were scaled using StandardScaler to normalize their ranges, ensuring compatibility with the Naive Bayes algorithm. Similar to Random Forest and Decision Tree models, the dataset was augmented using SMOTE to address class imbalances. A Gaussian Naive Bayes Classifier was trained on the resampled data to predict game genres based on the selected features. For cross-validation, a 5-fold Stratified K-Fold cross-validation was implemented to evaluate model accuracy on various subsets of the data. Accuracy scores were computed during this 5-fold cross-validation, providing a reliable measure of the model's performance. The model was tested on unseen data, and results were summarized in a confusion matrix and a classification report, just like how it was done on Decision Tree and Random Forest models. Similarly, feature importance was approximated by analyzing the variances of input features, providing insights into which attributes influenced genre predictions. A hypothetical scenario was tested with a new game having specific attributes (Price/Hour = 0.20, Time = 50 hours, Rating = 90), the ame values used for Decision Tree and Random Forest models. However in this model, I chose not to use RMSE as it is a metric specific to regression tasks where the goal is to predict continuous values. In this model, the task was classification, aiming to predict category. For classification models like Naive Bayes, accuracy, confusion matrices, and classification reports are more appropriate metrics as they evaluate the correctness of categorical predictions rather than numerical errors.
 
 
+***Accuracy and Confusion Matrix scores of the Model:*** For accuracy scores, the cross-validation accuracy scores range from 0.31 to 0.42, with a mean cross-validation accuracy of 0.38. These scores indicate that the model's generalization ability is relatively limited when tested on unseen data. The test set accuracy is 0.44, which means that the model correctly predicts the genre 44% of the time. While this performance is not particularly strong, it aligns with the simplicity of the Naive Bayes algorithm and the nature of the dataset.
+
+As for classification report, genres such as Vehicle Simulation and Card Game have high precision, indicating that when the model predicts these genres, it is often correct. However, many genres, such as Action-Adventure and Adventure, have zero precision, reflecting poor performance for these classes. Recall is high for genres like Vehicle Simulation and Card Game, which means the model successfully captures most of these classes. Also, recall is zero for several underrepresented genres, indicating that the model is not strong in handling all classes. The F1-score, a harmonic mean of precision and recall, reflects similar trends. Genres with high precision and recall, such as Vehicle Simulation, show strong F1-scores, while others exhibit very low or zero F1-scores.
+
+As for the confusion matrix, it reveals the breakdown of predictions for each genre. For example, Vehicle Simulation is accurately predicted with high consistency, as seen by its correctly predicted instances (diagonal values). Card Game also shows strong performance, with all its test cases correctly classified. Some genres, such as Action-Adventure and Adventure, are never correctly classified, resulting in zero correct predictions. This indicates that the Naive Bayes model struggles with genres that have overlapping features, leading to misclassification.
 
 
 # Findings
+
+In this section, findings derived from each of the visualizations and predictive models are given below.
+
+**VISUALIZATION FINDINGS**
+
+**-Finding 1: Pie Chart Visualization For Genre Distribution**
+
+
+**-Finding 2: Pie Chart Visualization For Genre Distribution**
+
+
+**-Finding 3: Pie Chart Visualization For Genre Distribution**
+
+
+**-Finding 4: Pie Chart Visualization For Genre Distribution**
+
+
+**-Finding 5: Pie Chart Visualization For Genre Distribution**
+
+
+**-Finding 6: Pie Chart Visualization For Genre Distribution**
+
+
+**-Finding 7: Pie Chart Visualization For Genre Distribution**
+
+
+**-Finding 8: Pie Chart Visualization For Genre Distribution**
+
+
+
+
+
+**MACHINE LEARNING MODEL FINDINGS**
 
 
 # Limitations and Future Work

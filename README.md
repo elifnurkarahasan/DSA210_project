@@ -266,7 +266,6 @@ The visualization helps me understand which genres deliver the most engagement r
 
 This summary table provides an overview of my gaming habits, with numerical value representations into total hours played, total money spent, average ratings, and price-per-hour for each genre. Action RPG stands out as the genre with the highest total hours played (509 hours) and total spending ($80.34), reflecting its dominance in both time investment and monetary commitment. Simulation follows closely in total hours (372.1 hours), showing its significance in my gaming preferences despite a lower total spending of $36.86, indicating a high value-to-cost ratio. Overall, this table is important in understanding how I allocate time and money across different genres, which I can then use as information points for future gaming preferences.
 
-![image](https://github.com/user-attachments/assets/37fbfbba-962b-403f-8180-aebc4420edc3)
 
 
 **MACHINE LEARNING MODEL FINDINGS**

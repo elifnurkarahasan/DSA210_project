@@ -198,37 +198,107 @@ In this section, findings derived from each of the visualizations and predictive
 
 **-Finding 1: Pie Chart Visualization For Genre Distribution**
 
-
-**-Finding 2: Pie Chart Visualization For Genre Distribution**
-
-
-**-Finding 3: Pie Chart Visualization For Genre Distribution**
+The pie chart reveals that Action RPG is the most played genre, accounting for 17.7% of my total playtime, followed by Simulation (12.9%) and City-Building (11.1%). These results highlight a preference for immersive and strategic gameplay experiences. Genres like Life Simulation (9.9%) and Survival (6.6%) also show moderate interest, while niche genres such as Turn-Based Strategy and Utility (Desktop Customization) make up less than 1% of my playtime. Overall, this analysis demonstrates a strong inclination towards genres with depth and replayability while reflecting less engagement with shorter or niche gameplay styles.
 
 
-**-Finding 4: Pie Chart Visualization For Genre Distribution**
+**-Finding 2: Visualization For Total Hours Spent Per Genre**
+
+The bar chart illustrating total hours spent per genre provides valuable insight into my gaming preferences. Action RPG emerges as the most time-consuming genre, with nearly 500 hours of gameplay, reflecting my strong preference for immersive and story-driven experiences. Following closely are Simulation and City-Building, which collectively indicate a significant interest in strategic and creative gameplay elements. Genres such as Life Simulation and Survival Horror also stand out, showcasing their ability to engage me for extended periods. Interestingly, genres like Tactical Shooter, Flight Simulation, and Card Game appear at the bottom of the list, suggesting either a lack of appeal or limited availability within my game library. This visualization add on to my previous idea that I lean toward genres with high replayability and depth, while shorter, action-packed genres tend to take a backseat. These findings align with the broader theme of my gaming habits favoring strategy, exploration, and creativity over fast-paced gameplay.
 
 
-**-Finding 5: Pie Chart Visualization For Genre Distribution**
+**-Finding 3: Visualization For Total Money Spent Per Genre**
+
+The bar chart of total money spent per genre reveals Action RPG as the genre I have invested the most in financially, surpassing other genres by a significant margin. This aligns with the findings from the hours-played visualization, highlighting a strong preference for immersive and narrative-rich experiences that tend to be more premium-priced. Survival and Action-Adventure also appear as genres with high monetary investment, suggesting that I am willing to pay for experiences that offer engaging challenges and exploration. Interestingly, genres such as Simulation, Business Simulation, and Construction and Management Simulation follow closely in terms of spending, indicating my inclination toward strategic and long-term planning games. These genres not only reflect my interest in depth and control but also justify their costs through extended playtime, as seen in the hours-played visualization. At the other end, genres like Multiplayer Online Battle Arena (MOBA), Card Game, and Utility (Desktop Customization) receive minimal financial investment, possibly reflecting their lower price points or limited appeal to my gaming preferences.
+
+From these findings, I can deduce that my spending habits align with my enjoyment of genres offering immersive, complex, and replayable experiences. It also shows that while I may explore different genres, my primary financial commitment goes toward games that provide long-term value and personal satisfaction. One could also question the probability that Action RPG games in general are very expensive and it does not correlate to my gaming preferences. This would be a valid question if I had not visualized my total hours played per genre data. Visualizing that data showcased that the genres I play the most end up mostly being the genres I pay for the most. Therefore it can be deried that there is a correlation between my spending behavior and the genres of games I play the most.
+
+**-Finding 4: Correlation Heatmap Visualization Among Numerical Features**
+
+The correlation heatmap provides valuable information on the relationships between the numerical features in the dataset: Price, Time, Rating, and Price/Hour. One important observation is the moderately positive correlation between Price and Price/Hour (0.31), suggesting that games with higher hourly costs also tend to have higher purchase prices. This makes sense as premium-priced games often offer unique features or experiences that justify their cost per hour.
+Interestingly, there is a slight negative correlation between Time and Price/Hour (-0.20). This implies that games played for longer durations tend to have lower hourly costs, aligning with the idea that the more time invested in a game, the better the value for money. However, this relationship is not strong, indicating variability in individual preferences and play styles. 
+The weak positive correlation between Rating and Time (0.16) suggests that higher-rated games tend to be played slightly more, but the influence of rating on playtime appears limited. Similarly, the near-zero correlation between Price and Rating (-0.01) indicates that the price of a game does not directly reflect its popularity or quality as measured by ratings.
+These findings highlight that while cost considerations such as price and hourly rate influence my gaming habits, they are not absolute determinants. Factors like enjoyment, genre preference, and replayability likely play a more significant role in shaping my playtime and spending patterns.
 
 
-**-Finding 6: Pie Chart Visualization For Genre Distribution**
+**-Finding 5: Average Rating Per Genre Visualization**
+
+This bar chart displays the average ratings for each game genre, offering insights into the perceived quality and popularity of games in my collection. Genres like Utility (Desktop Customization), Metroidvania, and Vehicle Simulation emerge as the top-rated, indicating that these games resonate well with the player base or excel in their execution. On the other hand, genres like Transportation Simulation, Card Game, and Action-Adventure have lower average ratings, suggesting that they may not consistently meet player expectations or have polarizing features.
+One significant observation is that genres with higher average ratings do not necessarily correspond to those I play the most. For example, Action RPG, a genre I have spent significant time playing, has a comparatively lower average rating. Also, in my former visualizations, the Utility genre appeared to be on the lowest side of my attention/interest focus, however, in this visualization it turned out to be a really popular genre. This disconnect highlights that my gaming preferences are not necessarily influenced by critics but mostly by personal enjoyment.
 
 
-**-Finding 7: Pie Chart Visualization For Genre Distribution**
+**-Finding 6: Number of Games Per Genre Visualization**
 
+This bar chart illustrates the distribution of the number of games I own across different genres. Simulation dominates my collection, indicating a strong preference or interest in games that simulate real-world systems or activities. Genres like Adventure, Business Simulation, and Survival Horror also feature often, reflecting a varied focus on immersive and strategic experiences. Interestingly, genres such as Metroidvania, Role-playing, and Factory Simulation appear less frequently in my collection. This could signify a limited exploration of these genres or a more selective approach when purchasing games within these categories. The findings suggest a balanced gaming habit, where I actively engage with both complex simulation genres and story-driven or strategy-heavy games. However, the significant presence of simulation games also highlights a potential bias toward genres that offer long-term engagement or creative freedom.
+This visualization reveals that my purchasing decisions lean heavily toward genres I find either engaging or replayable. It also provides that I may have an inclination to explore underrepresented genres like Metroidvania or Role-playing, which could offer fresh perspectives and expand my gaming experience.
 
-**-Finding 8: Pie Chart Visualization For Genre Distribution**
+**-Finding 7: Efficiency Analysis Scatter Plot Visualization**
 
+This scatterplot provides insights into the relationship between the price paid per hour of gameplay and the total hours spent playing games across genres, this values aree then turned into an efficiency metric: This data can be interpreted as an 'efficiency' measure as the more time I spend for a game that costs less money per hour, the more efficient it becomes.  Genres like Simulation and Action RPG are positioned at the lower end of the price-per-hour scale while showing significant total hours played, indicating these genres offer high value for money. Conversely, genres such as Flight Simulation or Utility (Desktop Customization) have a higher price per hour but lower total hours, suggesting a lower efficiency or niche interest.
+The visualization helps me understand which genres deliver the most engagement relative to cost. It also emphasizes the importance of balancing price and playtime when purchasing games, revealing my tendency to favor genres that provide longer-lasting entertainment.
 
+**-Finding 8: Number of Games Per Genre Visualization**
+
+This summary table provides an overview of my gaming habits, with numerical value representations into total hours played, total money spent, average ratings, and price-per-hour for each genre. Action RPG stands out as the genre with the highest total hours played (509 hours) and total spending ($80.34), reflecting its dominance in both time investment and monetary commitment. Simulation follows closely in total hours (372.1 hours), showing its significance in my gaming preferences despite a lower total spending of $36.86, indicating a high value-to-cost ratio. Overall, this table is important in understanding how I allocate time and money across different genres, which I can then use as information points for future gaming preferences.
 
 
 
 **MACHINE LEARNING MODEL FINDINGS**
 
+**-Finding 1: Decision Tree Model**
+
+The Decision Tree model provided meaningful insights into my gaming habits and preferences by analyzing the relationships between gameplay metrics. The model's classification performance was reflected in its test set accuracy of 66.67%, along with moderate precision and recall scores for certain genres like "Business Simulation" and "Tactical Shooter." These results indicate that while the model can reliably predict some genres, others—such as "Action-adventure" and "Adventure" were harder to classify, possibly due to insufficient data or overlapping characteristics between genres.
+
+The model highlighted the importance of features like "Rating" and "Time," which were identified as the most influential in predicting game genres. This finding aligns with the idea that my perception of a game's quality and the time I spend playing are closely tied to its genre. For example, genres like "Simulation" and "Vehicle Simulation" were predicted with high accuracy, suggesting that these are well-represented and distinct in my dataset.
+
+The regression aspect of the Decision Tree provided further insights into my spending patterns. With an RMSE of 5.85 and an average test set price of 6.70 USD, the model demonstrated a fair ability to predict the price of a game based on features like "Price/Hour," "Time," "Rating," and "Genre." When predicting for a hypothetical new game with a "Price/Hour" of 0.20, 50 hours of gameplay, and a rating of 90, the model classified the genre as "Simulation" and estimated the price at approximately 7.86 USD. This prediction suggests that I might be inclined to spend a reasonable amount on highly engaging and well-rated games, especially within specific genres.
+
+These findings reveal my inclination toward certain types of games that I consider high-value based on engagement and ratings. They align with the my findings about myself derived from visualizations, as they also indicate that I have a high interest in Simulation games. Overall, the Decision Tree model provided valuable information into both my gaming and purchasing preferance.
+
+**-Finding 2: Random Forest Model**
+
+The Random Forest model provided some intriguing insights into both classification and regression tasks. For the classification task, the model achieved a test set accuracy of 61%, which is moderate and highlights the complexity of predicting gaming genres based on the features provided. The confusion matrix indicates that while genres like "Vehicle Simulation" and "Card Game" were correctly classified with high precision and recall, others like "Action-adventure" and "Adventure" were misclassified frequently, possibly due to overlapping characteristics or insufficient distinguishing features. This suggests that my preferences in certain genres might not be as distinct as expected or that the features used for training the model do not entirely capture the intensity of these categories.
+
+For regression, the model achieved a mean RMSE of approximately 5.19, with the test set prediction being reasonably close to the average price. When predicting the price of a new game based on the input features, the model estimated a price of $8.20 for a "Vehicle Simulation" game. While the predicted genre seems plausible given the features provided, it is important to reflect on whether the genre aligns with personal preferences or if it's a result of bias in the training data. In the viusalizations above, I had derived that although I had some interest in them, vehicle simulation games were not a significant preference of mine. This inconsistency could signify either a broader interest across multiple genres or that specific patterns in the data influenced the prediction disproportionately. Overall, the Random Forest model underscored my preference for highly rated games and emphasized that time investment in games correlates with perceived value. 
+
+**-Finding 3: Naive Bayes Model**
+
+The Naive Bayes model offers unique insights with noticeable limitations compared to other models. The overall accuracy of the Naive Bayes classifier on the test set is approximately 44.4%, which is significantly lower than the Decision Tree and Random Forest models. The mean cross-validation accuracy of 38.2% further suggests that this model struggles with the dataset's complexity, likely due to its assumptions of feature independence, which may not align well with the interdependent relationships in the data.
+
+From the confusion matrix, we see that some genres, such as Vehicle Simulation, are predicted perfectly with high recall and precision. Similarly, Card Game achieves strong performance metrics, reflecting the model's ability to recognize specific genres with distinct characteristics. However, many genres, including Action-adventure, Adventure, and Simulation, have zero recall and precision, indicating that the model fails to identify these classes. This could stem from limited training samples or insufficient feature separability for these genres.
+
+The feature importance visualization highlights that Time is the most influential feature in predicting genres, closely followed by Rating and Price/Hour. This aligns with the idea that the amount of time spent on a game correlates strongly with its genre, reflecting my gaming preferences and habits. The lesser role of Price/Hour indicates that cost efficiency plays a less critical role in genre determination, at least for this model.
+
+For a hypothetical new game with features such as a Price/Hour of 0.20, 50 hours played, and a rating of 90, the Naive Bayes model predicts the genre as Turn-based Strategy. While this prediction might align with the observed data, the model's overall low accuracy raises questions about its reliability for decisions. This prediction also does not align well with the information I derived from my visualizations. The Turn-based Strategy genre never really appeared to be on the higher side of my preferences, yet the naive bayes model predicted it to be the genre I will buy a game of.
+
+In summary, the Naive Bayes model provides some insight into genre prediction, particularly for well-represented and distinct classes, but its limited overall accuracy and inconsistent predictions highlight the importance of exploring other models.
+
+**SUMMARY OF FINDINGS:**
+
+Through this detailed analysis of my gaming habits using visualizations and machine learning models, I have gained deeper insights into my preferences, behaviors, and decision-making patterns. I learned that Action RPGs, Simulations, and City-building games dominate my gaming hours, reflecting my interest for immersive, strategic, and engaging experiences. These genres likely appeal to my enjoyment of complex, open-ended gameplay and the sense of progression they offer. Similarly, genres like Survival Horror and Life Simulation, though less prominent, demonstrate my curiosity for diverse gaming styles.
+
+Ratings emerged as a not-so significant factor in shaping my decisions, which suggests that I sometimes prioritize quality and critically acclaimed experiences when exploring new games. However, the Price per Hour analysis revealed that while cost-efficiency is not my primary focus, I do gravitate towards games that provide lasting value, which aligns with my tendency to spend significant time in highly engaging games.
+
+The machine learning models provided interesting predictions, offering a glimpse into patterns in my gaming choices. The Decision Tree and Random Forest models identified  features like time spent and ratings as major predictors of my preferences, emphasizing the weight I place on personal engagement with games. These two models were in more alignment with the findings I derived from the visualizations about myself. Interestingly, the models Randem Forest and Naive Bayes predicted genres like Vehicle Simulation and Turn-based Strategy (which are not on the higher side of my prefernces visualizations), therefore reflecting a mix of alignment with my current habits and potential areas for exploration. The Naive Bayes model, while less accurate, reinforced these themes and highlighted the importance of balancing diverse predictors to understand my preferences.
+
+Overall, this process taught me that my gaming choices are not solely based on instinct but are influenced by a blend of enjoyment, financial value, and critical reception. I also learned how much I value long-term engagement and high-quality experiences over temporary enjoyment, fast paced games or cost-saving measures. Additionally, these findings encourage me to explore my less-played genres to expand my horizons while staying true to my core preferences.
 
 # Limitations and Future Work
 
+***Limitations and Future Work: What Could Be Done Better?***
 
+While this project provided valuable insights into my gaming habits and preferences, it is not without its limitations. One major limitation is the size and diversity of the dataset. A larger dataset, with more comprehensive information on different genres, games, and player metrics, could enhance the reliability and accuracy of the analyses. Additionally, the use of SMOTE for class imbalance, while helpful, may not have fully addressed the challenge of accurately predicting underrepresented genres. Future work could involve gathering data from a wider range of sources to create a more balanced and representative dataset.
+
+In addition, another area for improvement is the influence of external factors that were not accounted for in the analysis. Elements such as the platform on which games are played, community influences, marketing efforts, or seasonal trends in gaming habits were not considered. Incorporating these external variables could provide a more holistic understanding of the preferences and patterns in my gaming behavior.
+
+The machine learning models also revealed limitations. While the Decision Tree and Random Forest models performed relatively well, the Naive Bayes model struggled with accuracy due to its assumptions and oversimplification of relationships among features. Future iterations could involve experimenting with more advanced models such as Gradient Boosting or Neural Networks to improve predictive accuracy. Moreover, integrating user behavior data, such as session lengths or in-game decisions, could provide richer context and improve the models' understanding of preferences.
+
+Another area for improvement is the feature engineering process. The reliance on core metrics like time spent, ratings, and price per hour was effective but limited. Including additional features, such as game difficulty, multiplayer vs. single-player modes, or community feedback, could yield more nuanced insights into my decision-making patterns.
+
+### Future Plans About the Project
+
+Looking ahead, I may plan to extend this project by exploring recommendation systems. Using the insights gained from this analysis, I can then aim to develop a personalized recommendation engine that could suggest games based on my historical preferences, maximizing engagement and enjoyment. For any implementation in the future, I also plan to explore interactive tables to make the findings more accessible and visually appealing, allowing for  filtering and exploration of gaming trends.
+
+In addition, I would like to refine the models to make them stronnger and versatile, potentially applying them to other domains such as movie or book recommendations. By leveraging additional algorithms and advanced analytics, I hope to create a system that not only reflects my current habits but also inspires me to explore new genres and expand my interests. This project has given me an amazing opportunity for understanding my preferences, and I am excited to perhaps build on it to further explore how data-driven findings can enhance personal decision-making.
 
 
 

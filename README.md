@@ -200,6 +200,8 @@ In this section, findings derived from each of the visualizations and predictive
 
 The pie chart reveals that Action RPG is the most played genre, accounting for 17.7% of my total playtime, followed by Simulation (12.9%) and City-Building (11.1%). These results highlight a preference for immersive and strategic gameplay experiences. Genres like Life Simulation (9.9%) and Survival (6.6%) also show moderate interest, while niche genres such as Turn-Based Strategy and Utility (Desktop Customization) make up less than 1% of my playtime. Overall, this analysis demonstrates a strong inclination towards genres with depth and replayability while reflecting less engagement with shorter or niche gameplay styles.
 
+![1](https://github.com/user-attachments/assets/1fd24299-2ca6-427c-92c4-6b81cb7a5217)
+
 
 **-Finding 2: Visualization For Total Hours Spent Per Genre**
 
@@ -294,7 +296,7 @@ The machine learning models also revealed limitations. While the Decision Tree a
 
 Another area for improvement is the feature engineering process. The reliance on core metrics like time spent, ratings, and price per hour was effective but limited. Including additional features, such as game difficulty, multiplayer vs. single-player modes, or community feedback, could yield more nuanced insights into my decision-making patterns.
 
-### Future Plans About the Project
+***Future Plans About the Project***
 
 Looking ahead, I may plan to extend this project by exploring recommendation systems. Using the insights gained from this analysis, I can then aim to develop a personalized recommendation engine that could suggest games based on my historical preferences, maximizing engagement and enjoyment. For any implementation in the future, I also plan to explore interactive tables to make the findings more accessible and visually appealing, allowing for  filtering and exploration of gaming trends.
 
